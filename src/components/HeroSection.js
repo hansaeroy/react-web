@@ -76,7 +76,12 @@ const StyledLink = styled(Link)`
 const HeroSection = () => {
   return (
     <SectionBlock>
-      <Video src='/videos/video-1.mp4' autoPlay loop muted />
+      <Video
+        src={process.env.PUBLIC_URL + '/videos/video-1.mp4'}
+        autoPlay
+        loop
+        muted
+      />
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <ButtonBlock>
