@@ -1,5 +1,5 @@
 {
-  "name": "react-web",
+  "name": "reactweb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,12 +19,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
-    "predeploy": " npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -39,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "hompage": "https://hansaeroy.github.io/react-web/"
+  "homepage": "https://hansaeroy.github.io/react-web/"
 }

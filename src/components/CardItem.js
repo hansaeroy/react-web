@@ -79,7 +79,7 @@ const CardItem = (props) => {
     <Item>
       <ItemLink to={props.path}>
         <figure data-category={props.label}>
-          <Img alt='Travel Image' src={props.src} />
+          <Img alt='Travel Image' src={process.env.PUBLIC_URL + props.src} />
         </figure>
         <ItemInfo>
           <h5>{props.text}</h5>
